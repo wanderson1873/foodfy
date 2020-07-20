@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", "Georgia", "sans-serif";
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Heaher */
+header {
+    padding-top: 38px;
+    padding-bottom: 36px;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #111;
+    margin-left: 30px;
+}
+
+/* Main */
+
+main {
+    background-color: #FBDFDB;
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+
+    height: 366px;
+
+    position: relative;
+}
+
+main img {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+main div {
+    padding-top: 112px;
+    padding-left: 60px;
+}
+
+main div h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+main div p {
+    max-width: 316px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;
+}
+
+/* Section */
+.m_acessadas h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
