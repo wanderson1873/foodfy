@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Foodfy - Receitas</title>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <header class="container">
@@ -21,19 +22,81 @@
             </nav>
         </header>
 
-        <section>
-            <h1>Sobre o Foodfy</h1>
-            <p>Suspendisse placerat neque neque. Morbi dictum nulla non sapien rhoncus, et mattis erat commodo. Aliquam vel lacus a justo mollis luctus. Proin vel auctor eros, sed eleifend nunc. Curabitur eget tincidunt risus. Mauris malesuada facilisis magna, vitae volutpat sapien tristique eu. Morbi metus nunc, interdum in erat placerat, aliquam iaculis massa. Duis vulputate varius justo pharetra maximus. In vehicula enim nec nibh porta tincidunt. Vestibulum at ultrices turpis, non dictum metus. Vivamus ligula ex, semper vitae eros ut, euismod convallis augue.</p>
+        <section class="container">
+            <div id="receitas" class="cards">
+                <div id="burger" class="card">
+                    <img src="img/burger.png" alt="burger da foodfy">
+                    <h3>Triplo bacon burger</h3>
+                    <span>por Jorge Relado</span>
+                </div>
 
-            <p>Fusce nec pulvinar nunc. Duis porttitor tincidunt accumsan. Quisque pulvinar mollis ipsum ut accumsan. Proin ligula lectus, rutrum vel nisl quis, efficitur porttitor nisl. Morbi ut accumsan felis, eu ultrices lacus. Integer in tincidunt arcu, et posuere ligula. Morbi cursus facilisis feugiat. Praesent euismod nec nisl at accumsan. Donec libero neque, vulputate semper orci et, malesuada sodales eros. Nunc ut nulla faucibus enim ultricies euismod.</p>
+                <div id="pizza" class="card">
+                    <img src="img/pizza.png" alt="pizza da foodfy">
+                    <h3>Pizza 4 estações</h3>
+                    <span>por Fabio Melo</span>
+                </div>
+
+                <div id="espaguete" class="card">
+                    <img src="img/espaguete.png" alt="espeguete da foodfy">
+                    <h3>Espaguete ao alho</h3>
+                    <span>por Jília Kimoto</span>
+                </div>
+
+                <div id="lasanha" class="card">
+                    <img src="img/lasanha.png" alt="lasanha da foodfy">
+                    <h3>Lasanha mac n’ cheese</h3>
+                    <span>por Juliano Vieira</span>
+                </div>
+
+                <div id="doce" class="card">
+                    <img src="img/doce.png" alt="doce-de-pão da foodfy">
+                    <h3>Docinhos pão-do-céu</h3>
+                    <span>por Ricardo Pinto</span>
+                </div>
+
+                <div id="asinhas" class="card">
+                    <img src="img/asinhas.png" alt="asinha da foodfy">
+                    <h3>Asinhas de frango ao barbecue</h3>
+                    <span>por Maisa Lopes</span>
+                </div>
+
+                <div id="burger2" class="card">
+                    <img src="img/burger.png" alt="burger da foodfy">
+                    <h3>Triplo bacon burger</h3>
+                    <span>por Jorge Relado</span>
+                </div>
+
+                <div id="pizza2" class="card">
+                    <img src="img/pizza.png" alt="pizza da foodfy">
+                    <h3>Pizza 4 estações</h3>
+                    <span>por Fabio Melo</span>
+                </div>
+
+                <div id="espaguete2" class="card">
+                    <img src="img/espaguete.png" alt="espeguete da foodfy">
+                    <h3>Espaguete ao alho</h3>
+                    <span>por Jília Kimoto</span>
+                </div>
+
+            </div>
         </section>
 
-        <section></section>
+        <div id="modal" class="hide">
+            <div class="content">
+                <img src="" alt="">
+                <h1></h1>
+                <p></p>
 
-        <section></section>
+                <a class="close" href="#">
+                    <i class="material-icons">close</i>
+                    Fechar</a>
+            </div>
+
+        </div>
 
         <footer>
             <p>Todos direitos reservados, receitas Foodfy.</p>
         </footer>
+    <script src="script.js"></script>
     </body>
 </html>
