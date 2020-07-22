@@ -209,35 +209,3 @@ footer p {
     color: #999;
     padding: 23px 0;
 }
-
-@media only screen and (max-width: 560px) {
-    .container {
-        width: 100%;
-    }
-
-    main {
-        grid-template-columns: 1fr;
-        height: 200px;
-
-    }
-
-    main img {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    main div {
-        padding-top: 40px;
-        padding-left: 20px;
-    }
-
-    main div h1 {
-        font-size: 26px;
-
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-
-    }
-}
