@@ -3,7 +3,7 @@
   <img src="img/logo.png" width="150">
 <br>
 <br>
-Foody receitas
+Foodfy receitas
 </h1>
 
 
