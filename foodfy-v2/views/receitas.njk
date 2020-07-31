@@ -4,65 +4,18 @@
     <title>Foodfy - Receitas</title>
 {% endblock head %}
 
-
 {% block content %}
 
     <section class="container">
         <div id="receitas" class="cards">
-            <div id="burger" class="card">
-                <img src="img/burger.png" alt="burger da foodfy">
-                <h3>Triplo bacon burger</h3>
-                <span>por Jorge Relado</span>
-            </div>
+            {% for item in itens %}
 
-            <div id="pizza" class="card">
-                <img src="img/pizza.png" alt="pizza da foodfy">
-                <h3>Pizza 4 estações</h3>
-                <span>por Fabio Melo</span>
-            </div>
-
-            <div id="espaguete" class="card">
-                <img src="img/espaguete.png" alt="espeguete da foodfy">
-                <h3>Espaguete ao alho</h3>
-                <span>por Jília Kimoto</span>
-            </div>
-
-            <div id="lasanha" class="card">
-                <img src="img/lasanha.png" alt="lasanha da foodfy">
-                <h3>Lasanha mac n’ cheese</h3>
-                <span>por Juliano Vieira</span>
-            </div>
-
-            <div id="doce" class="card">
-                <img src="img/doce.png" alt="doce-de-pão da foodfy">
-                <h3>Docinhos pão-do-céu</h3>
-                <span>por Ricardo Pinto</span>
-            </div>
-
-            <div id="asinhas" class="card">
-                <img src="img/asinhas.png" alt="asinha da foodfy">
-                <h3>Asinhas de frango ao barbecue</h3>
-                <span>por Maisa Lopes</span>
-            </div>
-
-            <div id="burger2" class="card">
-                <img src="img/burger.png" alt="burger da foodfy">
-                <h3>Triplo bacon burger</h3>
-                <span>por Jorge Relado</span>
-            </div>
-
-            <div id="pizza2" class="card">
-                <img src="img/pizza.png" alt="pizza da foodfy">
-                <h3>Pizza 4 estações</h3>
-                <span>por Fabio Melo</span>
-            </div>
-
-            <div id="espaguete2" class="card">
-                <img src="img/espaguete.png" alt="espeguete da foodfy">
-                <h3>Espaguete ao alho</h3>
-                <span>por Jília Kimoto</span>
-            </div>
-
+                <div id="burger" class="card">
+                    <img src="{{item.image}}" alt="foto de {{item.title}}">
+                    <h3>{{item.title}}</h3>
+                    <span>{{item.author}}</span>
+                </div>
+            {% endfor %}
         </div>
     </section>
 

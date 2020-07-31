@@ -1,13 +1,16 @@
 const express = require('express')
+const nunjucks = require('nunjucks')
+
 const server = express()
 
-const nunjucks = require('nunjucks')
+// Get data from BD 'data.js'
+const receitas = require("./data")
 
 // Configuration style
 server.use(express.static('public'))
 
 // Configutarion tamplate
-server.set("view engine", "html")
+server.set("view engine", "njk")
 
 nunjucks.configure("views", {
     express: server
@@ -25,8 +28,13 @@ server.get("/sobre", function(req, res){
 
 // Route
 server.get("/receitas", function(req, res){
-    res.render("receitas")
+    return res.render("receitas", { itens: receitas })
 })
+
+// Route bot foud 404.
+server.use(function(req, res) {
+    res.status(404).render("not-found")
+  })
 
 // Starting server
 server.listen(5000, function(){
