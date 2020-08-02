@@ -13,30 +13,42 @@ server.use(express.static('public'))
 server.set("view engine", "njk")
 
 nunjucks.configure("views", {
-    express: server
+    express: server,
+    autoescape: false,
+    noCache: true
 })
 
 // Root route
-server.get("/", function(req, res){
-    res.render("index")
+server.get("/", function (req, res) {
+    return res.render("main")
 })
 
 // Route
-server.get("/sobre", function(req, res){
-    res.render("sobre")
+server.get("/sobre", function (req, res) {
+    return res.render("sobre")
 })
 
 // Route
-server.get("/receitas", function(req, res){
+server.get("/receitas", function (req, res) {
     return res.render("receitas", { itens: receitas })
 })
 
+// Route params
+server.get("/receitas/:index", function (req, res) {
+    const recipes = receitas // Array de receitas carregadas do data.js
+    const id = req.params.index
+
+    return res.render("detail", { item: recipes[id] })
+})
+
 // Route bot foud 404.
-server.use(function(req, res) {
-    res.status(404).render("not-found")
-  })
+server.use(function (req, res) {
+    return res.status(404).render("not-found")
+})
+
+
 
 // Starting server
-server.listen(5000, function(){
+server.listen(5000, function () {
     console.log("server is runnig!")
 })

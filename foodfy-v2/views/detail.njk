@@ -1,0 +1,20 @@
+{%extends "layout.njk" %}
+
+{%block head%}
+    <title>Detalhes - Foodfy</title>
+{%endblock%}
+
+{%block content %}
+        <section class="recipe">
+               <img src="{{item.image}}" alt="Imagem de {{item.title}}">
+               <h1>{{item.title}}</h1>
+               <p>{{item.author}}</p>
+               <h2>Igredientes</h2>
+               <p>{{item.ingredients}}</p>
+               <h2>Modo de preparo</h2>
+               <p>{{item.preparation}}</p>
+               <h2>Informações Adicionais</h2>
+               <p>{{item.info}}</p>
+            
+        </section>
+{%endblock%}}
