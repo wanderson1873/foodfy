@@ -35,7 +35,11 @@ Foodfy receitas
 * HTML  
 * CSS
 * JavaScript
+* node.JS
+* Nunchuks
 
 
 
-criado por [Wanderson O](https://github.com/wanderson1873)
+---
+
+Feito com :purple_heart: by [Wanderson Oliveira](https://github.com/wanderson1873)
