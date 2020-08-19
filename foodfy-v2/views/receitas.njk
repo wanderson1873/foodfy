@@ -8,8 +8,9 @@
 
     <section class="container">
         <div id="receitas" class="cards">
-            {% for item in itens %}
-                <div id="burger" class="card">
+            n
+            {% for  %}
+                <div id="{{ itens[item] }}" class="card">
                     <img src="{{item.image}}" alt="foto de {{item.title}}">
                     <h3>{{item.title}}</h3>
                     <span>{{item.author}}</span>
@@ -17,19 +18,6 @@
             {% endfor %}
         </div>
     </section>
-
-    <div id="modal" class="hide">
-        <div class="content">
-            <img src="" alt="">
-            <h1></h1>
-            <p></p>
-
-            <a class="close" href="">
-                <i class="material-icons">close</i>
-                Fechar</a>
-        </div>
-
-    </div>
 
     <script src="script.js"></script>
 
