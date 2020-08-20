@@ -8,13 +8,14 @@
 
     <section class="container">
         <div id="receitas" class="cards">
-            n
-            {% for  %}
-                <div id="{{ itens[item] }}" class="card">
+            {% set i = 0 %}
+            {% for item in itens %}
+                <div id="{{ i }}" class="card">
                     <img src="{{item.image}}" alt="foto de {{item.title}}">
                     <h3>{{item.title}}</h3>
                     <span>{{item.author}}</span>
                 </div>
+            {% set i = i + 1 %}
             {% endfor %}
         </div>
     </section>
